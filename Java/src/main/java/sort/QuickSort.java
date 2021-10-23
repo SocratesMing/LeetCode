@@ -12,23 +12,24 @@ public class QuickSort {
         int left = l, right = r;
         int pivot = arr[left]; //最左边的值为比较的标准值
         while (left < right) {
-            while (left < right && arr[right] > pivot) { //右边的值本来就比标准值大
+            while (left < right && arr[right] >= pivot) {
                 right--;
             }
-
-            if (left < right) {
+            if (left < right ) {
                 arr[left] = arr[right];
+                left++;
             }
-            while (left < right && arr[left] <= pivot) {//左边的值本来就比标准值小
+            while (left < right && arr[left] <= pivot) {
                 left++;
             }
             if (left < right) {
-                arr[right]=arr[left];  //退出循环后说明右边的值比标准值小，交换
-            }
-            if (left >= right) {  //左右指针相撞说明排序完成
-                arr[left] = pivot;
+                // swap(arr,left,right);
+                arr[right] = arr[left];
+                right--;
             }
         }
+
+        arr[left] = pivot;
 
         sort(arr,l,right-1);
         sort(arr,right+1,r);

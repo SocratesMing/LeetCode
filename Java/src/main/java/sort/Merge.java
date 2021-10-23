@@ -30,6 +30,7 @@ public class Merge {
         int i= low;
         int j = mid+1;
         int k=0;
+
         // 把较小的数先移到新数组中
         while(i<=mid && j<=high){
             if(a[i]<a[j]){

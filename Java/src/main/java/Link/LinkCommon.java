@@ -159,10 +159,3 @@ public class LinkCommon {
     }
 }
 
-class Node {
-    public Node next;
-    public String value;
-    public Node(String value) {
-        this.value = value;
-    }
-}

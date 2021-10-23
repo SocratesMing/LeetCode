@@ -93,7 +93,6 @@ public class BinaryTreeOrder {
             if (node.left!=null) queue.add(node.left);
             if (node.right!=null) queue.add(node.right);
         }
-
     }
 
 
@@ -112,21 +111,21 @@ public class BinaryTreeOrder {
         c.right = f;
         e.left = g;
 
-        System.out.println("前序遍历");
-        preOrder(a);
-        System.out.println();
-        perOrder1(a);
-        System.out.println();
-        System.out.println("中序遍历");
-        midOrder(a);
-        System.out.println();
-        midOrder1(a);
-        System.out.println();
-        System.out.println("后续遍历");
-        postOrder(a);
-        System.out.println();
-        postOrder1(a);
-        System.out.println();
+//        System.out.println("前序遍历");
+//        preOrder(a);
+//        System.out.println();
+//        perOrder1(a);
+//        System.out.println();
+//        System.out.println("中序遍历");
+//        midOrder(a);
+//        System.out.println();
+//        midOrder1(a);
+//        System.out.println();
+//        System.out.println("后续遍历");
+//        postOrder(a);
+//        System.out.println();
+//        postOrder1(a);
+//        System.out.println();
 
         System.out.println("层序遍历");
         Queue<Node> queue = new LinkedList<>();
